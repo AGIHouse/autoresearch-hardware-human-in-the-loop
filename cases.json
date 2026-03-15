@@ -1,0 +1,94 @@
+{
+  "cases": [
+    {
+      "case_id": "sar_001",
+      "context": "Urban intersection with moving vehicle detection at 0800 hours",
+      "candidate_a": {
+        "temporal_consistency": 0.3,
+        "spatial_compactness": 0.8,
+        "peak_strength": 0.9,
+        "clutter_level": 0.7,
+        "summary": "Strong reflection but inconsistent across time frames, high urban clutter"
+      },
+      "candidate_b": {
+        "temporal_consistency": 0.8,
+        "spatial_compactness": 0.6,
+        "peak_strength": 0.7,
+        "clutter_level": 0.4,
+        "summary": "Moderate signal with good temporal tracking and low clutter interference"
+      }
+    },
+    {
+      "case_id": "sar_002", 
+      "context": "Highway overpass monitoring for suspicious object detection",
+      "candidate_a": {
+        "temporal_consistency": 0.9,
+        "spatial_compactness": 0.4,
+        "peak_strength": 0.5,
+        "clutter_level": 0.3,
+        "summary": "Weak but stable signal, very diffuse spatial signature, minimal clutter"
+      },
+      "candidate_b": {
+        "temporal_consistency": 0.6,
+        "spatial_compactness": 0.9,
+        "peak_strength": 0.8,
+        "clutter_level": 0.6,
+        "summary": "Bright compact reflection but moderate temporal instability"
+      }
+    },
+    {
+      "case_id": "sar_003",
+      "context": "Airport perimeter security scan during storm conditions", 
+      "candidate_a": {
+        "temporal_consistency": 0.7,
+        "spatial_compactness": 0.7,
+        "peak_strength": 0.6,
+        "clutter_level": 0.8,
+        "summary": "Balanced detection with high weather-related clutter contamination"
+      },
+      "candidate_b": {
+        "temporal_consistency": 0.8,
+        "spatial_compactness": 0.8,
+        "peak_strength": 0.4,
+        "clutter_level": 0.2,
+        "summary": "Clean compact signature with good persistence but low signal strength"
+      }
+    },
+    {
+      "case_id": "sar_004",
+      "context": "Border crossing vehicle identification in desert terrain",
+      "candidate_a": {
+        "temporal_consistency": 0.5,
+        "spatial_compactness": 0.3,
+        "peak_strength": 0.9,
+        "clutter_level": 0.5,
+        "summary": "Very strong return but highly diffuse and temporally unstable"
+      },
+      "candidate_b": {
+        "temporal_consistency": 0.9,
+        "spatial_compactness": 0.9,
+        "peak_strength": 0.7,
+        "clutter_level": 0.3,
+        "summary": "Strong compact target with excellent temporal coherence"
+      }
+    },
+    {
+      "case_id": "sar_005",
+      "context": "Maritime vessel tracking in coastal waters with rough seas",
+      "candidate_a": {
+        "temporal_consistency": 0.4,
+        "spatial_compactness": 0.6,
+        "peak_strength": 0.8,
+        "clutter_level": 0.9,
+        "summary": "Strong signal heavily contaminated by sea clutter and wave interference"
+      },
+      "candidate_b": {
+        "temporal_consistency": 0.7,
+        "spatial_compactness": 0.5,
+        "peak_strength": 0.6,
+        "clutter_level": 0.4,
+        "summary": "Moderate strength with acceptable persistence and manageable clutter"
+      }
+    }
+  ]
+}

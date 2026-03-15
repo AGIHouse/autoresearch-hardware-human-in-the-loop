@@ -1,0 +1,24 @@
+{
+  "feedback": [
+    {
+      "case_id": "sar_001",
+      "winner": "candidate_b",
+      "reason": "candidate_b is better because it is temporally consistent and less cluttered, which makes target tracking more reliable"
+    },
+    {
+      "case_id": "sar_002",
+      "winner": "candidate_a", 
+      "reason": "candidate_a preserves temporal consistency which is critical for reliable detection, even though the signal is diffuse"
+    },
+    {
+      "case_id": "sar_003",
+      "winner": "candidate_b",
+      "reason": "candidate_b is superior because it maintains spatial compactness and temporal persistence while avoiding clutter contamination"
+    },
+    {
+      "case_id": "sar_004",
+      "winner": "candidate_b",
+      "reason": "candidate_b shows excellent temporal coherence and spatial compactness, making it a physically plausible target detection"
+    }
+  ]
+}
