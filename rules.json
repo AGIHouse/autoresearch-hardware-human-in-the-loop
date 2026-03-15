@@ -1,0 +1,144 @@
+{
+  "constraints": [
+    {
+      "type": "temporal_consistency",
+      "description": "Target must maintain temporal consistency for reliable tracking",
+      "threshold": 0.6,
+      "source_case": "sar_001",
+      "keywords": [
+        "temporal",
+        "tracking",
+        "consistent"
+      ]
+    },
+    {
+      "type": "temporal_consistency",
+      "description": "Target must maintain temporal consistency for reliable tracking",
+      "threshold": 0.6,
+      "source_case": "sar_002",
+      "keywords": [
+        "temporal"
+      ]
+    },
+    {
+      "type": "spatial_compactness",
+      "description": "Target should maintain spatial compactness for precise localization",
+      "threshold": 0.5,
+      "source_case": "sar_002",
+      "keywords": [
+        "spatial"
+      ]
+    },
+    {
+      "type": "temporal_consistency",
+      "description": "Target must maintain temporal consistency for reliable tracking",
+      "threshold": 0.6,
+      "source_case": "sar_003",
+      "keywords": [
+        "temporal",
+        "persistence"
+      ]
+    },
+    {
+      "type": "spatial_compactness",
+      "description": "Target should maintain spatial compactness for precise localization",
+      "threshold": 0.5,
+      "source_case": "sar_003",
+      "keywords": [
+        "spatial",
+        "compact"
+      ]
+    },
+    {
+      "type": "temporal_consistency",
+      "description": "Target must maintain temporal consistency for reliable tracking",
+      "threshold": 0.6,
+      "source_case": "sar_004",
+      "keywords": [
+        "temporal"
+      ]
+    },
+    {
+      "type": "spatial_compactness",
+      "description": "Target should maintain spatial compactness for precise localization",
+      "threshold": 0.5,
+      "source_case": "sar_004",
+      "keywords": [
+        "spatial",
+        "compact"
+      ]
+    }
+  ],
+  "anti_goals": [
+    {
+      "type": "clutter_avoidance",
+      "description": "Avoid interpretations with high clutter contamination",
+      "max_threshold": 0.6,
+      "source_case": "sar_001",
+      "keywords": [
+        "clutter"
+      ]
+    },
+    {
+      "type": "spatial_diffusion",
+      "description": "Avoid overly diffuse spatial signatures",
+      "max_threshold": 0.4,
+      "source_case": "sar_002",
+      "keywords": [
+        "diffuse"
+      ]
+    },
+    {
+      "type": "clutter_avoidance",
+      "description": "Avoid interpretations with high clutter contamination",
+      "max_threshold": 0.6,
+      "source_case": "sar_003",
+      "keywords": [
+        "contamination",
+        "clutter"
+      ]
+    }
+  ],
+  "heuristics": [
+    {
+      "type": "reliability_preference",
+      "description": "Prefer reliable and consistent detections",
+      "weight": 0.7,
+      "source_case": "sar_001",
+      "keywords": [
+        "reliable"
+      ]
+    },
+    {
+      "type": "reliability_preference",
+      "description": "Prefer reliable and consistent detections",
+      "weight": 0.7,
+      "source_case": "sar_002",
+      "keywords": [
+        "reliable"
+      ]
+    },
+    {
+      "type": "physical_plausibility",
+      "description": "Prefer physically plausible interpretations",
+      "weight": 0.8,
+      "source_case": "sar_004",
+      "keywords": [
+        "plausible",
+        "physical"
+      ]
+    }
+  ],
+  "winning_patterns": {
+    "temporal_consistency": 0.85,
+    "spatial_compactness": 0.675,
+    "peak_strength": 0.575,
+    "clutter_level": 0.3
+  },
+  "extraction_summary": {
+    "total_feedback_items": 4,
+    "constraints_extracted": 7,
+    "anti_goals_extracted": 3,
+    "heuristics_extracted": 3
+  }
+}
